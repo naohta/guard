@@ -1,0 +1,26 @@
+# A sample Guardfile
+# More info at https://github.com/guard/guard#readme
+
+# guard-s3 configuration options
+opts = {
+  :access_key_id => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+  :secret_access_key => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+  :bucket => "mybucket",
+  :s3_permissions => :public_read
+}
+
+guard 's3', opts do
+  watch(/.*/)
+end
+
+# guard-s3 configuration options
+opts = {
+  :access_key_id => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+  :secret_access_key => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+  :bucket => "mybucket",
+  :s3_permissions => :public_read
+}
+
+guard 's3', opts do
+  watch(/.*/)
+end
